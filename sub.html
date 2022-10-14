@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/t_favi.ico" />
+    <title>탬버린즈</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <?php 
+    include "header.php";
+?> 
+
+<!-- ************************************  -->
+
+
+<div class="sub_nav_wrap">
+    <ul class="sub_nav">
+        <li><a class="on" href="http://yykyeong.dothome.co.kr/temp/sub.html">전체 보기</a></li>
+        <li><a href="http://yykyeong.dothome.co.kr/temp/sub_best.html">베스트셀러</a></li>
+        <li><a href="http://yykyeong.dothome.co.kr/temp/sub_gift.html">선물 추천</a></li>
+        <li><a href="http://yykyeong.dothome.co.kr/temp/sub_sample.html">샘플 키트</a></li>
+    </ul>
+</div>
+
+<div class="subAll">
+<div class="shop_banner">
+    <div class="recommend_wrap bannerDefault">
+        <div class="reco_tit">추천 상품</div>
+        <div class="swiper rrswiper">
+            <div class="swiper-wrapper">
+                <div class="recoItem swiper-slide">
+                    <div class="img_area">
+                        <a href="#"><img src="img/sub/recommend_01.png" alt="re01"></a>
+                        <div class="recoScent"><p>샌달우드 | 패츌리 | 흙 내음</p></div>
+                    </div>
+                    <ul class="text_area">
+                        <li>손소독제</li>
+                        <li>000</li>
+                        <li>18,000원</li>
+                        <li><button type="button">cart</button></li>
+                    </ul>
+                </div>
+                <div class="recoItem swiper-slide">
+                    <div class="img_area">
+                        <a href="#"><img src="img/sub/recommend_02.png" alt="re02"></a>
+                        <div class="recoScent"><p>로즈우드 | 코코넛 향 | 우아함</p></div>
+                    </div>
+                    <ul class="text_area">
+                        <li>체인핸드</li>
+                        <li>7</li>
+                        <li>32,000원</li>
+                        <li><button type="button">cart</button></li>
+                    </ul>
+                </div>
+                <div class="recoItem swiper-slide">
+                    <div class="img_area">
+                        <a href="#"><img src="img/sub/recommend_03.png" alt="re03"></a>
+                        <div class="recoScent"><p>씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스</p></div>
+                    </div>
+                    <ul class="text_area">
+                        <li>샤워리바디</li>
+                        <li>BIGALICO</li>
+                        <li>52,000원</li>
+                        <li><button type="button">cart</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner_wrap" data-tag="tube">
+        <div class="bannerImg">
+            <img src="img/sub/gift_tube.jpg">
+        </div>
+        <div class="bannerNotice">
+            <p class="title">튜브 핸드 기프트</p>
+            <p>소중한 순간을 특별하게 만들어줄 탬버린즈만의 기프트<br>
+            본 패키지는 튜브 핸드크림 구매 시 함께 제공합니다.</p>
+            <p class="alert">* 온라인 스토어에서만 제공되는 패키지 입니다.</p>
+        </div>
+    </div>
+    <div class="banner_wrap" data-tag="perfume">
+        <div class="bannerImg">
+            <img src="img/sub/gift_perfume.jpg">
+        </div>
+        <div class="bannerNotice">
+            <p class="title">퍼퓸 핸드 기프트</p>
+            <p>소중한 순간을 특별하게 만들어줄 탬버린즈만의 기프트<br>
+            레드 피라미드 패키지는<br>
+            <span>퍼퓸 핸드(15ml) 구매 시 함께 제공됩니다.</span></p>
+            <p class="alert">* 온라인 스토어에서만 제공되는 패키지 입니다.</p>
+        </div>
+    </div>
+    <div class="banner_wrap" data-tag="showerly">
+        <div class="bannerImg">
+            <img src="img/sub/gift_showerly.png">
+        </div>
+        <div class="bannerNotice">
+            <p class="title">마음을 전하는 따뜻한 선물</p>
+            <p>따뜻하고 정성이 담긴 마음과 함께<br>
+            풍성한 한가위를 미리 준비해보세요<br>
+            <span></span></p>
+            <p class="alert">* 추석 패키지는 재고 소진 시까지 진행됩니다.</p>
+        </div>
+    </div>
+</div>
+
+<div class="shop_all_wrap">
+    <div class="shop_filter">
+        <p><a href="#" class="filterLink">
+            <span>전체상품</span>
+            <img class="filter_arrow" src="img/arrow01.png" alt="filter_arrow">
+        </a></p>
+
+        <ul class="filterList">
+            <li class="on" id="all">전체상품</li>
+            <li id="hand">핸드크림</li>
+            <li id="showerly">샤워리바디</li>
+            <li id="sanitizer">손소독제</li>
+            <li id="mulit">멀티프래그넌스</li>
+            <li id="body">핸드앤바디</li>
+            <li id="candle">캔들</li>
+        </ul>
+        <ul class="handList hidden">
+            <li id="tube">튜브</li>
+            <li id="perfume">퍼퓸</li>
+            <li id="chain">체인</li>
+        </ul>
+    </div>
+
+    <div class="shop_container">
+        <div class="shop_box" data-list="hand" data-tag="chain">
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/chainhand_000_L.jpg" alt="l"></a>
+                    <a href="#"><img src="img/sub/chainhand_000_s.jpg" alt="s"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">65ml</button>
+                    <button type="button">35ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">샌달우드 | 패츌리 | 흙 내음</p>
+                    <p class="name">000</p>
+                    <p class="price active">32,000원</p>
+                    <p class="price">28,000원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop_box" data-list="showerly" data-tag="showerly">
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/ShoweryBody_NIMBUS_L.jpg" alt="L_"></a>
+                    <a href="#"><img src="img/sub/ShoweryBody_NIMBUS_s.jpg" alt="s_"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">470ml</button>
+                    <button type="button">240ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">도넛피치 | 어린코코넛 | 포근한 머스크</p>
+                    <p class="name">NIMBUS</p>
+                    <p class="price active">52,000원</p>
+                    <p class="price">33,000원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop_box" data-list="sanitizer" data-tag="sanitizer" >
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/sani_000_L.jpg" alt="L_"></a>
+                    <a href="#"><img src="img/sub/sani_000_s.jpg" alt="S_"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">250ml</button>
+                    <button type="button">30ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">샌달우드 | 패츌리 | 흙 내음</p>
+                    <p class="name">000</p>
+                    <p class="price active">32,000원</p>
+                    <p class="price">8,500원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="shop_box" data-list="mulit" data-tag="mulit">
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/multi_clang_L.jpg" alt="L_"></a>
+                    <a href="#"><img src="img/sub/multi_clang_s.jpg" alt="S_"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">100ml</button>
+                    <button type="button">10ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">오렌지과육 | 월계수 향 | 태양빛</p>
+                    <p class="name">CLANG</p>
+                    <p class="price active">53,500원</p>
+                    <p class="price">23,900원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="shop_box" data-list="body" data-tag="body" >
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/body_EMULSION_000.jpg" alt="L_"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">250ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">샌달우드 | 패츌리 | 흙 내음</p>
+                    <p class="name">000</p>
+                    <p class="price active">43,000원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="shop_box" data-list="hand" data-tag="tube">
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/cocoontube1_fey9.jpg" alt="l"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">65ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</p>
+                    <p class="name">FEY9</p>
+                    <p class="price active">25,000원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop_box" data-list="hand" data-tag="perfume">
+            <div class="shop_item">
+                <div class="itemImg">
+                    <a href="#"><img class="active" src="img/sub/perfume_FEY9_L.jpg" alt="l"></a>
+                    <a href="#"><img src="img/sub/perfume_FEY9_s.jpg" alt="l"></a>
+                </div>
+                <div class="itemCapacity">
+                    <button class="active" type="button">40ml</button>
+                    <button type="button">15ml</button>
+                </div>
+                <div class="itemInfo">
+                    <p class="scent">무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</p>
+                    <p class="name">FEY9</p>
+                    <p class="price active">32,000원</p>
+                    <p class="price">18,000원</p>
+                </div>
+                <div class="addCart">
+                    <button type="button">장바구니에 추가</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<!-- footer -->
+
+<?php 
+include "footer.php";
+?> 
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,248 @@
+.sub_nav{
+    display: flex;
+    text-align: center;
+    margin: 120px 0 20px;
+}
+.sub_nav li {
+    width: 25%;
+    font-size: 1.6rem;
+}
+.sub_nav li a {display: block; color: #bebebe;}
+.sub_nav li a.on{color: #202020;}
+.img_area img, .shop_item img, .bannerImg img {width: 100%; display: block;}
+
+.reco_tit {font-size: 1.6rem; margin-bottom: 15px;}
+
+.shop_banner {
+position: relative;
+margin-bottom: 30px;
+} 
+
+
+.img_area {position: relative;}
+
+.recoScent {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.7rem; height: 30%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.recoItem:hover .recoScent {
+    opacity: 1;
+}
+
+.recoScent p {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+    width: 100%;
+}
+
+.text_area li:first-child{
+    text-align: center;
+    margin: 10px 0;
+}
+.text_area li:nth-child(2){
+    font-weight: bold;
+}
+
+
+.text_area {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0e0;
+    border-bottom: 1px solid #e0e0e0e0;
+    position: relative;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+.text_area button {
+    font-size: 0px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: url(../img/cart.svg) no-repeat center center /contain ;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+/* ***************************** */
+
+.shop_filter{
+    position: relative;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.filterLink { position: relative;}
+.filter_arrow {
+    position: absolute;
+    left: 120px;
+    top: 8px;
+    display: inline-block;
+    width: 16px;
+}
+.filterList {
+    color: #bebebe;
+    position: absolute;
+    font-size: 1.4rem;
+    margin-top: 30px;
+
+}
+.filterList li {line-height: 2rem; cursor: pointer;}
+.shop_filter .on {color: #202020;}
+
+.handList {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.handList li {color: #bebebe;}
+
+.hidden{display: none!important;}
+
+.subAll {display: flex; flex-direction: column; position: relative;}
+
+/* ***************************** */
+.itemCapacity {
+    display: flex;
+    justify-content: center;
+}
+
+.itemCapacity button {
+    border: none; background: none; padding: 20px 40px;
+    color: #bebebe;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.addCart button {
+    width: 100%;
+    border: none;
+    background: #202020;
+    color: #fff;
+    margin: 20px 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+.itemCapacity .active {
+    color: #202020;
+    font-weight: bold;
+}
+
+.itemImg img, .itemInfo .price {display: none;}
+
+.shop_container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop_box {
+    margin: 30px 20px; 
+    width: 100%;
+}
+.shop_item .active {display: block;}
+
+.itemInfo {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #202020;
+    position: relative;
+}
+.itemInfo p {margin: 5px 0; font-size: 1.3rem;} 
+.itemInfo .name {font-size: 1.5rem; font-weight: bold;}
+.itemInfo .scent {margin-bottom: 25px;}
+.itemInfo .price {position: absolute; bottom: 0; right: 0; font-size: 1.5rem;}
+
+
+/* ************************* */
+.bannerNotice {text-align: center; word-break: keep-all; font-size: 1.3rem;}
+.bannerNotice span {font-weight: bold;}
+.bannerNotice .title {font-weight: bold; margin-bottom: 15px; font-size: 1.7rem;}
+.bannerNotice .alert {margin-top: 20px; color: red;}
+/* ************************* */
+.shop_banner>div {display: none;}
+.shop_banner .bannerDefault{display: block;}
+.recommend_wrap {position: relative; background: #f2f2f2; padding: 15px 0;}
+
+
+.banner_wrap {position: relative; width: 80%; margin: 0 auto;}
+
+
+@media screen and (min-width : 769px) {
+    .sub_nav li {font-size: 2rem;}
+    .reco_tit {
+        font-size: 3.3rem; width: 80%; margin: 0 auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .shop_all_wrap {width: 75%; margin: 0 auto;}
+    .shop_container {
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    
+    .shop_box {
+        width: 40%;
+    }
+    .banner_wrap {width: 80%; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: flex;}
+    
+    
+    .banner_wrap .bannerImg {width: 50%;}
+
+
+    .banner_wrap .bannerNotice {width: 50%; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+
+    .shop_banner { width: 100%; height: 450px; position: relative;} 
+    .recommend_wrap {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+    .bannerDefault {position: relative; bottom: 0;}
+    .rrswiper {width: 80%;}
+    /* **************** */
+.shop_filter{font-size: 2rem;}
+.filterLink { position: relative;}
+.filter_arrow {left: 170px; top: 12px; width: 18px;}
+
+.filterList {
+    font-size: 1.7rem;
+    margin-top: 40px;
+}
+.filterList li {line-height: 2.4rem;}
+
+.handList {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.handList li {color: #bebebe;}
+
+
+    
+}
+
+@media screen and (min-width : 1200px) {
+    .shop_banner {height: 700px;}
+    .recoScent {display: block;}
+    .shop_box {width: 28%;}
+    .banner_wrap .bannerImg {width: 50%; margin-left: 10%;}
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/sub_store.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/t_favi.ico" />   
+    <title>탬버린즈</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/plugins/jquery.fitvids.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.colorbox.js"></script>	
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sub_store.js"></script>
+
+</head>
+<body>
+<?php 
+include "header.php";
+?> 
+    <!-- ************************** -->
+
+    <ul class="storeTab">
+        <li><a  class="active" href="#offlineStore">스토어</a></li>
+        <li><a href="#exhibition">전시</a></li>
+    </ul>
+    
+    <div class="storetabCont">
+    <!-- 매장 -->
+    <div id="offlineStore" class="store_content">
+        <div class="off_wrapper flagship_wrapper">
+            <div class="pageTitle">플래그십스토어<span class="itemCount" id="flag_cnt"></span></div>
+            
+            <div class="flagshipItem">
+                <div class="flagSlide">
+                    <div>
+                        <video autoplay loop muted playsinline width="100%" alt="dosanvid">
+                            <source src="mp4/dosan01.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div><img src="img/store_dosan.jpg" alt="dosan"></div>
+                    <div><img src="mp4/dosan04.jpg" alt="dosan"></div>
+                </div>
+                <div class="store_text">
+                    <div class="store_name">하우스 도산</div>
+                    <div class="store_about">
+                        <p>서울 강남구 압구정로 46길 50</p>
+                        <p>+82 70 4128 2124</p>
+                        <p>월 - 일 11:00am ~ 09:00pm</p>
+                    </div>
+                    <div class="store_map"><a href="#" target="_blank">지도보기</a></div>
+                </div>
+            </div>
+
+            <div class="flagshipItem">
+                <div class="flagSlide">
+                    <div><img src="mp4/sinsa01.jpg" alt="sinsa">
+                    </div>
+                    <div><img src="img/store_sinsa.jpg" alt="dosan"></div>
+                    <div><img src="mp4/sinsa05.jpg" alt="dosan"></div>
+                </div>
+                <div class="store_text">
+                    <div class="store_name">하우스 도산</div>
+                    <div class="store_about">
+                        <p>서울 강남구 압구정로 46길 50</p>
+                        <p>+82 70 4128 2124</p>
+                        <p>월 - 일 11:00am ~ 09:00pm</p>
+                    </div>
+                    <div class="store_map"><a href="#" target="_blank">지도보기</a></div>
+                </div>
+            </div>
+
+            
+        <div>            
+            <div class="pageTitle">스톡키스트<span class="itemCount" id="stk_cnt"></span>
+            <p>지도</p>
+            </div>
+            <ul class="stockist_list">
+                <li>
+                    <div class="name_stk">스타필드 하남점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4095019979704!2d127.22152355109957!3d37.545414779702845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb3d2021e0c6f%3A0xbf6f19bd4ac702bc!2z7Iqk7YOA7ZWE65OcIO2VmOuCqA!5e0!3m2!1sko!2skr!4v1663144293332!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p>경기도 하남시 미사대로 750 스타필드 하남 1F</p>
+                        <p>+82 031 8072 8499</p>
+                        <p>월 - 일 10:00am ~ 9:00pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">신세계 면세점 명동점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0662902091326!2d126.9785913798372!3d37.56028273234264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f402e427b1%3A0x926de623a14ef9fd!2z7Iug7IS46rOE66m07IS47KCQIOuqheuPmeygkA!5e0!3m2!1sko!2skr!4v1663145098262!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">서울 중구 퇴계로 77 신세계백화점 본점 04583 10F</p>
+                        <p class="stkNum">+82 02 6370 4182</p>
+                        <p class="stkTime">월 - 일 10:30am ~ 6:30pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">10 꼬르소꼬모 에비뉴엘점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5318.878075575816!2d126.97750826918792!3d37.56392563770445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1ed06e313%3A0x7fafd0481ca58ebf!2zMTDqvKzrpbTshozqvKzrqqg!5e0!3m2!1sko!2skr!4v1663145198454!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">서울 중구 남대문로 73 5층 10 꼬르소꼬모</p>
+                        <p class="stkNum">+82 02 2118 6095</p>
+                        <p class="stkTime">월 - 일 10:30am ~ 8:00pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">10 꼬르소꼬모 청담점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.195203926134!2d127.04020657983628!3d37.5268955342536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca478ff4b7207%3A0xff65ae84b39c3a27!2z7IK87ISx66y87IKwKOyjvCkxMOq8rOultOyGjOq8rOuqqOyEnOyauA!5e0!3m2!1sko!2skr!4v1663145607569!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">서울 강남구 압구정로 416</p>
+                        <p class="stkNum">+82 02 3018 1010</p>
+                        <p class="stkTime">월 - 일 11:00am ~ 8:00pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">신세계백화점 강남점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1604316239245!2d127.00088587983595!3d37.50413413555581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1780001aa3d%3A0xe968dbc71dc9a2c3!2z7Iug7IS46rOE67Cx7ZmU7KCQIOqwleuCqOygkA!5e0!3m2!1sko!2skr!4v1663145716233!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">서울특별시 서초구 신반포로 176 (반포동) 1F</p>
+                        <p class="stkNum">+82 02-3479-1275</p>
+                        <p class="stkTime">월 - 일 10:30am ~ 8:00pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">신세계백화점 센텀시티점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4905284378506!2d129.1269696797847!3d35.16932471557908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356893482f790cff%3A0xd14de1d17dc015b1!2z7Iug7IS46rOE67Cx7ZmU7KCQIOyEvO2FgOyLnO2LsOygkA!5e0!3m2!1sko!2skr!4v1663145940583!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">부산 해운대구 센텀남대로 35 신세계백화점 센텀시티점 1F</p>
+                        <p class="stkNum">+82 051-745-1398</p>
+                        <p class="stkTime">월 - 일 10:30am ~ 8:00pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="name_stk">롯데백화점 본점</div>
+                    <div class="cont_stk">
+                        <div class="map_stk">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.590334422101!2d126.97948887983732!3d37.56471453208897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1f9155af7%3A0x77d801cbcd221ab4!2z66Gv642w67Cx7ZmU7KCQIOuzuOygkA!5e0!3m2!1sko!2skr!4v1663146021609!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p class="stkAdr">서울 중구 남대문로 81 롯데백화점 본점 B1F</p>
+                        <p class="stkNum">+82 02-772-3905</p>
+                        <p class="stkTime">월 - 일 10:30am ~ 20:30pm</p>
+                        <p class="stkMap"><a href="#">지도보기</a></p>
+                    </div>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <!-- 전시 -->
+    <div id="exhibition" class="store_content">
+        <div class="off_wrapper">
+            <div class="pageTitle">전시<span class="itemCount"></span></div>
+            <div>
+                <img src="mp4/exhibition01.jpg" alt="exhibitimg">
+            </div>
+            <div>
+                <div class="exhibitionTxt store_text">
+                    <div class="store_name">샤워리바디 컬렉션</div>
+                    <div class="store_about">
+                        <p>20nn.nn.nn - 20nn.nn.nn</p>
+                        <p>서울 강남구 압구정로46길50 하우스 도산</p>
+                    </div>
+                    <div class="readBox">
+                        <p class="read">자세히 보기</p>
+                        <div class="readCont">
+                            [DAY DREAM: 공상] 전시는 일상에서 채워지지 않은 우리의 공허함과 이를 채우려는 욕망에 대한 이야기입니다. <br> 
+                            탬버린즈의 새로운 네가지 향(BIGALICO, FOG, NIMBUS, STORM)은 자연에서 영감을 받은 향으로 샤워를 하며<br class="pcbr">
+                            떠올린 공상의 한 장면을 시각화한 전시공간입니다. <br><br> 
+                            폭풍이 지나간 자리에 새싹이 움트는 것처럼, 시원한 비가 지난 뒤 남은 고요한 시간에 우리는 사고가 무한히<br class="pcbr">
+                            확장되는듯한 일종의 해방감과 함께 맑아진 머릿속이 창의적인 영감으로 가득 메워지는 경이로운<br class="pcbr">
+                            경험을 하기도 합니다.<br> 
+                            비는 마치 작은 구름이 되어 오렌지밭 위를 지나며 싱그러움을 전하고 때로는 잘게<br class="pcbr"> 
+                            부서진 안개로 주위를 부유하며 포근히 감싸 안듯이 마음을 어루만져 주는듯 합니다. <br><br>  
+                            자연에서 내리는 비가 선사하는 다양한 영감을 담고 있는 샤워리바디 컬렉션으로 탬버린즈가 선사하는 <br> 
+                            비의 이야기를 만나보세요.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exSlider_wrap">
+                <ul class="exhibitSlide">
+                    <li><a href="mp4/exhibition04.jpg"><img src="mp4/exhibition04.jpg"></a></li>
+                    <li><a href="mp4/exhibition05.jpg"><img src="mp4/exhibition05.jpg"></a></li>
+                    <li><a href="mp4/exhibition07.jpg"><img src="mp4/exhibition07.jpg"></a></li>
+                    <li><a href="mp4/exhibition08.jpg"><img src="mp4/exhibition08.jpg"></a></li>
+                    <li><a href="mp4/exhibition02.jpg"><img src="mp4/exhibition02.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    </div>
+
+<!-- footer -->
+
+<?php 
+include "footer.php";
+?> 
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
