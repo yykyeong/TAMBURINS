@@ -11,7 +11,7 @@
 <header>
     <div class="header_mobile">
     <div class="header_wrap_m">
-        <h1><a href="http://yykyeong.dothome.co.kr/temp/main.html"><img src="img/logo_.png" alt="header_logo"></a></h1>
+        <h1><a href="/index.html"><img src="img/logo_.png" alt="header_logo"></a></h1>
         <ul class="header_right">
             <li><a href="#" class="cart_menu"><img src="img/cart.png" alt="cart"></a></li>
             <li><a href="#" class="aside_menu"><img src="img/hamburg.png" alt="ham"></a></li>
@@ -20,11 +20,11 @@
     </div>
     <div class="header_pc">
         <div class="header_wrap_p">
-            <h1><a href="http://yykyeong.dothome.co.kr/temp/main.html"><img src="img/logo_.png" alt="header_logo"></a></h1>
+            <h1><a href="/index.html"><img src="img/logo_.png" alt="header_logo"></a></h1>
             <ul class="pc_nav">
                 <li><a href="#">brand</a></li>
-                <li><a href="http://yykyeong.dothome.co.kr/temp/sub.html">shop</a></li>
-                <li><a href="http://yykyeong.dothome.co.kr/temp/sub_store.html">store</a></li>
+                <li><a href="/sub.html">shop</a></li>
+                <li><a href="/sub_store.html">store</a></li>
             </ul>
             <ul class="header_right_pc">
                 <li><button type="button" class="search_pc">찾기</button></li>
@@ -56,13 +56,13 @@
                     <li class="has_sub">
                         <a href="#">SHOP</a>
                         <ul class="aside_nav_sub">
-                            <li><a href="http://yykyeong.dothome.co.kr/temp/sub.html">전체 보기</a></li>
-                            <li><a href="http://yykyeong.dothome.co.kr/temp/sub_best.html">베스트셀러</a></li>
-                            <li><a href="http://yykyeong.dothome.co.kr/temp/sub_gift.html">선물 추천</a></li>
-                            <li><a href="http://yykyeong.dothome.co.kr/temp/sub_sample.html">샘플 키트</a></li>
+                            <li><a href="/sub.html">전체 보기</a></li>
+                            <li><a href="/sub_best.html">베스트셀러</a></li>
+                            <li><a href="/sub_gift.html">선물 추천</a></li>
+                            <li><a href="/sub_sample.html">샘플 키트</a></li>
                         </ul>
                     </li>
-                    <li><a href="http://yykyeong.dothome.co.kr/temp/sub_store.html">STORE</a></li>
+                    <li><a href="/sub_store.html">STORE</a></li>
                 </ul>
                 <ul class="aside_login">
                     <li><a href="#">로그인</a></li>
