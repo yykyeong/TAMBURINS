@@ -1,4 +1,10 @@
 $(function(){    
+
+// header , footer 
+    $('.header-include').load('/header.html', function() {});
+    $('.footer-include').load('/footer.html', function() {});
+    
+    
     
     
 //모바일 메뉴
