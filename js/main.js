@@ -1,43 +1,73 @@
 $(function(){    
 
-// header , footer 
-    $('.header-include').load('/header.html', function() {});
-    $('.footer-include').load('/footer.html', function() {});
+    /* header */  
+    $('.header-include').load('/header.html', function() {
+        
+        //모바일 메뉴
+        $('.aside_menu').click(function(){
+            $('.aside, .aside_bg').addClass('on');
+        });
+        
+        $('.aside_cross').click(function(){
+            $('.aside, .aside_bg').removeClass('on');
+        });
+        
+        $('.aside_bg').click(function(){
+            $('.aside, .aside_bg').removeClass('on');
+        });
+        
+        $('.has_sub > a').click(function(){
+            $(this).next().slideToggle(500);
+        })
+        
+        // 장바구니
+        $('.cart_menu').click(function(){
+            $('.aside_cart_wrap').addClass('cartOn');
+        });
+        
+        $('.aside_cart .aside_cross').click(function(){
+            $('.aside_cart_wrap').removeClass('cartOn');
+        });
+        
+        $('.aside_cart_wrap').click(function(e){
+            if($(e.target).is($('.aside_cart_wrap'))){
+                $('.aside_cart_wrap').removeClass('cartOn');
+            };
+        });
+     
+    });
+
+    /* footer */ 
+    $('.footer-include').load('/footer.html', function() {
+        const f_button = $('.f_btn');
+        const f_list = $('.footer_group');
+        const arrow = $('.f_btn span');
+        
+        for (let i=0 ; i< f_button.length;i++){
+        f_button.eq(i).on('click',function(){
+        if(f_list.eq(i).is(':visible')){
+            f_list.eq(i).slideUp();
+            arrow.eq(i).removeClass('btnUp')
+        } else{
+            f_list.eq(i).slideDown();
+            arrow.eq(i).addClass('btnUp')}
+        });};
+        
+        $(window).resize(function(){
+        if($(window).width() >= 1200){
+            f_button.attr('disabled',true);
+            // alert ('비활성');
+        } else {
+            f_button.attr('disabled',false);}
+        }).resize(); 
+    
+    
+    });
     
     
     
     
-//모바일 메뉴
-$('.aside_menu').click(function(){
-    $('.aside, .aside_bg').addClass('on');
-});
 
-$('.aside_cross').click(function(){
-    $('.aside, .aside_bg').removeClass('on');
-});
-
-$('.aside_bg').click(function(){
-    $('.aside, .aside_bg').removeClass('on');
-});
-
-$('.has_sub > a').click(function(){
-    $(this).next().slideToggle(500);
-})
-
-// 장바구니
-$('.cart_menu').click(function(){
-    $('.aside_cart_wrap').addClass('cartOn');
-});
-
-$('.aside_cart .aside_cross').click(function(){
-    $('.aside_cart_wrap').removeClass('cartOn');
-});
-
-$('.aside_cart_wrap').click(function(e){
-    if($(e.target).is($('.aside_cart_wrap'))){
-        $('.aside_cart_wrap').removeClass('cartOn');
-    };
-});
 
 /* sec01_main */
 
@@ -231,28 +261,6 @@ var bestSwiper = new Swiper(".bestSwiper", {
     }}});
     
     
-    /* footer */
-    var f_button = $('.f_btn');
-    var f_list = $('.footer_group');
-    var arrow = $('.f_btn span');
-    
-    for (let i=0 ; i< f_button.length;i++){
-    f_button.eq(i).on('click',function(){
-    if(f_list.eq(i).is(':visible')){
-        f_list.eq(i).slideUp();
-        arrow.eq(i).removeClass('btnUp')
-    } else{
-        f_list.eq(i).slideDown();
-        arrow.eq(i).addClass('btnUp')}
-    });};
-    
-    $(window).resize(function(){
-    if($(window).width() >= 1200){
-        f_button.attr('disabled',true);
-        // alert ('비활성');
-    } else {
-        f_button.attr('disabled',false);}
-    }).resize(); 
 
 
 
@@ -269,9 +277,6 @@ $('.chat').click(function (event) {
     event.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 300);
 });
-
-
-
 
 
 
